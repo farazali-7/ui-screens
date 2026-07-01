@@ -3,6 +3,7 @@ import PageOne from './pages/PageOne'
 import PageTwo from './pages/PageTwo'
 import ContactSection from './pages/ContactSection'
 import PropertyListing from './pages/PropertyListing'
+import CanaliHome from './pages/CanaliHome'
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
         <li><Link to="/page-two">/page-two → PageTwo</Link></li>
         <li><Link to="/contact">/contact → ContactSection</Link></li>
         <li><Link to="/property-listing">/property-listing → PropertyListing</Link></li>
+        <li><Link to="/canali">/canali → CanaliHome</Link></li>
       </ul>
     </div>
   )
@@ -39,6 +41,7 @@ export default function App() {
       <Route path="/page-two" element={<PageTwo />} />
       <Route path="/contact" element={<ContactSection />} />
       <Route path="/property-listing" element={<PropertyListing />} />
+      <Route path="/canali" element={<CanaliHome />} />
       {/* Add more routes here: <Route path="/your-slug" element={<YourPage />} /> */}
       <Route path="*" element={<NotFound />} />
     </Routes>
